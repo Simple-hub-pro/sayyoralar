@@ -1,2 +1,2 @@
 # sayyoralar
-Bu kichik web dastur
+Bu kichik FLASK web sayt
