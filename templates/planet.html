@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="planet-icon" style="background: {{ 'linear-gradient(45deg, #ff4500, #ffd700)' if planet.type == 'Rocky' else 'linear-gradient(45deg, #1e90ff, #00bfff)' }}">
+        {{ planet.name[0] }}
+    </div>
+    <h1>{{ planet.name }}</h1>
+    <div class="planet-info">
+        <p><strong>{{ t('type') }}:</strong> {{ t(planet.type|lower) }}</p>
+        <p><strong>{{ t('position') }}:</strong> {{ planet.position }}</p>
+        <p><strong>{{ t('description') }}:</strong> {{ t('description') }} {{ planet.name }}. {{ t('description_placeholder') }}</p>
+    </div>
+    <a href="{{ url_for('index') }}?lang={{ lang }}" class="btn">{{ t('back_to_solar_system') }}</a>
+</div>
+{% endblock %} 
