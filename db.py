@@ -67,6 +67,12 @@ yupiter = {
     "sayyora_haqida": "Quyosh tizimidagi eng katta sayyora bo'lib, gaz gigantlari toifasiga kiradi"
 }
 
-sayyoralar = [merkuriy, venera, yer, mars, yupiter ]
+uran = {
+    "sayyora_nomi": "Uran",
+    "sayyora_joylashuvi": "6-o'rinda",
+    "sayyora_haqida": "eng ko'p yo'ldoshlarga ega sayyora"
+}
+
+sayyoralar = [merkuriy, venera, yer, mars, yupiter, uran]
 
 # print(sayyoralar)
